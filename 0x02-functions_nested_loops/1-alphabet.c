@@ -1,19 +1,22 @@
 #include "main.h"
 
 /**
-  * print_alphabet - Make the small alphabet
-  *
-  * Return: void
-  */
-void print_alphabet(void)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
 {
-	char smallAlphabet;
+    void print_alphabet(void)
+{
+	char c;
 
-	for (smallAlphabet = 'a'; smallAlphabet <= 'z'; smallAphabet++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(smallAlphaet);
+		_putchar(c);
 	}
 
 	_putchar('\n');
 }
-
+    return (0);
+}
