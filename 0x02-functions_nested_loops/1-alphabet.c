@@ -1,3 +1,9 @@
+/*
+ *File: 1-alphabet.c
+ * Auth: John Ouma Otieno <John7ouma@gmail.com>
+ *
+ */
+
 #include "main.h"
 
 /**
