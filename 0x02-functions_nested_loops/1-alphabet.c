@@ -8,7 +8,6 @@
 
 /**
  * main - check the code
- * print_alphabet prints all the alphabets in lower case, followed by a new line
  *
  * Return: Always 0.
  */
