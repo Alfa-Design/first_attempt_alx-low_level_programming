@@ -5,7 +5,7 @@
  */
 
 
-#include <main.h>
+#include "main.h"
 
 /**
  * print_triangle - a function that prints a triangle
