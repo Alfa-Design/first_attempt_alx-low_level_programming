@@ -15,8 +15,7 @@ int main(void)
         	 maxFact = n;
         	 n = n / div;
        	      if(n == 1) {
-            	printf("%d is the largest prime factor !",maxFact);
-           	 ans = 1;
+               	 ans = 1;
             break;
          }
       }
