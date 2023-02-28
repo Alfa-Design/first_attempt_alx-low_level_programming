@@ -14,23 +14,11 @@
 #define MIN_CHAR 8
 #define MAX_CHAR 1023
 #define BUF_SIZE 1024
-#define PRIME_MOD 937
-
-int main (int argc, char **argv)
+#define PRIME_MOD 94
+int main()
 {
-    int N;
+    int N = 10;
     char password [BUF_SIZE];
-
-    while (1) {
-        // get N
-        while (1) {
-            printf ("Enter number of digits: ");
-            scanf ("%d", &N);
-            if (!N) exit (EXIT_SUCCESS);
-            if (N >= MIN_CHAR && N <= MAX_CHAR)
-                break;
-            printf ("Password should be between %d - %d characters\n", MIN_CHAR, MAX_CHAR);
-        }
 
         time_t now = time (NULL);
 
@@ -41,6 +29,6 @@ int main (int argc, char **argv)
 
         password [N] = '\0';
 
-        printf ("password = %s\n", password);
-    }
+        return (0);
+    
 }
