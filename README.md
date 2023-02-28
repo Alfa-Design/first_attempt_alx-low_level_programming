@@ -1,10 +1,19 @@
-# alx-low_level_programming
-Write a script that runs a C file through the preprocessor and save the result into another file.
+Write a program that prints _putchar, followed by a new line.
 
-The C file name will be saved in the variable $CFILE
-The output should be saved in the file c
-Write a script that compiles a C file but does not link.
+The program should return 0. Write a function that prints the alphabet, in lowercase, followed by a new line.
 
-The C file name will be saved in the variable $CFILE
-The output file should be named the same as the C file, but with the extension .o instead of .c.
-Example: if the C file is main.c, the output file should be main.o
+Prototype: void print_alphabet(void);
+You can only use _putchar twice in your code. Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
+
+Prototype: void print_alphabet_x10(void);
+You can only use _putchar twice in your code. Write a function that checks for lowercase character.
+
+Prototype: int _islower(int c);
+Returns 1 if c is lowercase
+Returns 0 otherwise
+FYI: The standard library provides a similar function: islower. Run man islower to learn more. Write a function that checks for alphabetic character.
+
+Prototype: int _isalpha(int c);
+Returns 1 if c is a letter, lowercase or uppercase
+Returns 0 otherwise
+FYI: The standard library provides a similar function: isalpha. Run man isalpha to learn more.
