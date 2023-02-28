@@ -11,9 +11,9 @@
  *
  */
 
-int main() 
+void passwordgen() 
 {
-  int i,password,len;
+  int i,len;
   srand((unsigned int)time(NULL));
   printf("Enter Password Length and must be greater than 5\n");
   scanf("%d",&len);
