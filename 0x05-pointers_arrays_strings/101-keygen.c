@@ -11,24 +11,31 @@
  *
  */
 
-#define MIN_CHAR 8
-#define MAX_CHAR 1023
-#define BUF_SIZE 1024
-#define PRIME_MOD 94
-int main()
+int main() 
 {
-    int N = 10;
-    char password [BUF_SIZE];
-
-        time_t now = time (NULL);
-
-        srand ((unsigned int) (now % PRIME_MOD));
-
-        for (int i = 0; i < N; i++)
-            password [i] = 33 + rand () % 94;
-
-        password [N] = '\0';
-
-        return (0);
-    
+  int i,password,len;
+  srand((unsigned int)time(NULL));
+  printf("Enter Password Length and must be greater than 5\n");
+  scanf("%d",&len);
+  if(len>=5)
+  {
+     for(i=0;i<len;i++)
+      {
+      int k=rand()%128;
+       if((k>=48&&k<=57)||(k>=65&&k<=90)||(k>=97&&k<=122)||(k>=35&&k<=37)||k==64)
+       {
+        printf("%c",k);
+        }
+        else
+        {
+         i--;
+        }
+      }
+      printf("\n");
+  }
+  else
+  {
+   printf("Length should be greater than 5\n");
+  }
+  return(0);
 }
